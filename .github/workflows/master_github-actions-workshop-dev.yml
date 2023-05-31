@@ -54,3 +54,6 @@ jobs:
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_6F02B4FF62F74543BCFE7A058EF63015 }}
           package: .
+        env:
+          ENV: ${{ vars.ENV }}
+          SECRET: ${{ secrets.SECRET }}
